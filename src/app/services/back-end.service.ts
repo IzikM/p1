@@ -13,17 +13,7 @@ export class BackEndService {
   getInfo(fName: string): object {
     const FUrl = this.urlBase + fName;
     // Make the HTTP request:
-    this.http
-      .get<AString>(FUrl)
-      .subscribe(
-      (data: any[]) => {
-        // Read the result field from the JSON response.
-        // this.results = data['results'];
-        console.log(data);
-      },
-      (err: object) => {
-
-      });
+    this.http.get<AString>(FUrl);
     return this.results;
   }
 

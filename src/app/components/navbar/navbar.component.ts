@@ -28,17 +28,6 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
 
     const navBarId = 'pepperNavBar';
-    console.log(this);
-    console.log(this);
-    console.log(this);
-    console.log(this);
-    console.log(this);
-    console.log(this.optionsService);
-    console.log(this.optionsService);
-    console.log(this.optionsService);
-    console.log(this.optionsService);
-    console.log(this.optionsService);
-    console.log(this.optionsService);
     this.config = this.optionsService.getConfig();
     this.addRoutePage(navBarId, 'Init', '');
     for (let i = 0; i < this.config.pages.pages.length; i++) {
